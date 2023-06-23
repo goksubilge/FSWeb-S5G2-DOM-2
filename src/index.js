@@ -7,3 +7,17 @@ import './less/index.less'
 
 
 // Kodlar buraya gelecek!
+
+/*const card = document.querySelector("h1");
+
+card.addEventListener("dblclick", (event) => {
+    event.h1.target.style.backgroundColor = 'blue';
+});
+
+*/
+//dblclick
+const card = document.querySelector("h1");
+card.addEventListener('dblclick', (event) => {  
+    event.target.style.backgroundColor = '#ECCBD9'; 
+});
+

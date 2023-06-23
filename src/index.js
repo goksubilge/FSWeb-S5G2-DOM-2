@@ -15,9 +15,18 @@ card.addEventListener("dblclick", (event) => {
 });
 
 */
-//dblclick
-const card = document.querySelector("h1");
-card.addEventListener('dblclick', (event) => {  
-    event.target.style.backgroundColor = '#ECCBD9'; 
-});
+//mouseover
+document.querySelector("nav").addEventListener("mouseover",function(e){
+    e.target.style.backgroundColor = "#E1DD8F";
+    e.target.style.fontWeight = "900";
+    setTimeout(() => {
+        e.target.style.color = "#8E3B46"
+        e.target.style.fontWeight = "900";
+    }, 900);
+    });
 
+//dblclick
+const card = document.querySelector("h2");
+card.addEventListener("dblclick", (event) => {  
+    event.h2.target.style.backgroundColor = "#ECCBD9"; 
+});
